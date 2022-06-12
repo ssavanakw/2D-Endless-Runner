@@ -20,10 +20,13 @@ public class CharacterMoveController : MonoBehaviour
     public float groundRaycastDistance;
     public LayerMask groundLayerMask;
 
+    private Animator anim;
+
     // Start is called before the first frame update
     void Start()
     {
         rig = GetComponent<Rigidbody2D>();
+        anim = GetComponent<Animator>();
     }
 
     void FixedUpdate()
@@ -72,5 +75,7 @@ public class CharacterMoveController : MonoBehaviour
             }
 
         }
+        // Change Animation
+        anim.SetBool("isOnGround", isOnGround);
     }
 }

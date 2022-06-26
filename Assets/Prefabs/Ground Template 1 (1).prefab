@@ -130,7 +130,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 1aa481e7aecfc25449468fa9bbed34f8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -239,7 +239,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 1aa481e7aecfc25449468fa9bbed34f8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -348,7 +348,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 1aa481e7aecfc25449468fa9bbed34f8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -457,7 +457,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 1aa481e7aecfc25449468fa9bbed34f8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
@@ -566,7 +566,7 @@ BoxCollider2D:
   m_Material: {fileID: 6200000, guid: 1aa481e7aecfc25449468fa9bbed34f8, type: 2}
   m_IsTrigger: 0
   m_UsedByEffector: 0
-  m_UsedByComposite: 0
+  m_UsedByComposite: 1
   m_Offset: {x: 0, y: 0}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}

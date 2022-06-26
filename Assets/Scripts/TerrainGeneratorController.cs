@@ -7,6 +7,7 @@ public class TerrainGeneratorController : MonoBehaviour
     private List<GameObject> spawnedTerrain;
     private float lastGeneratedPositionX;
     private float lastRemovedPositionX;
+    private Dictionary<string, List<GameObject>> pool;
 
     [Header("Templates")]
     public List<TerrainTemplateController> terrainTemplates;
@@ -50,12 +51,15 @@ public class TerrainGeneratorController : MonoBehaviour
 
     void Start()
     {
+        // init pool
+        pool = new Dictionary<string, List<GameObject>>();
+
         spawnedTerrain = new List<GameObject>();
 
         lastGeneratedPositionX = GetHorizontalPositionStart();
         lastRemovedPositionX = lastGeneratedPositionX - terrainTemplateWidth;
 
-        foreach(TerrainTemplateController terrain in earlyTerrainTemplates)
+        foreach (TerrainTemplateController terrain in earlyTerrainTemplates)
         {
             GenerateTerrain(lastGeneratedPositionX, terrain);
             lastGeneratedPositionX += terrainTemplateWidth;
@@ -67,10 +71,10 @@ public class TerrainGeneratorController : MonoBehaviour
         }
     }
 
-    private void GenerateTerrain (float posX, TerrainTemplateController forceterrain = null)
+    private void GenerateTerrain(float posX, TerrainTemplateController forceterrain = null)
     {
         GameObject item = null;
-        if(forceterrain == null)
+        if (forceterrain == null)
         {
             item = terrainTemplates[Random.Range(0, terrainTemplates.Count)].gameObject;
         }
@@ -78,7 +82,7 @@ public class TerrainGeneratorController : MonoBehaviour
         {
             item = forceterrain.gameObject;
         }
-        GameObject newTerrain = Instantiate(item, transform);
+        GameObject newTerrain = GenerateFromPool(item, transform);
         newTerrain.transform.position = new Vector2(posX, 0f);
         spawnedTerrain.Add(newTerrain);
     }
@@ -90,7 +94,7 @@ public class TerrainGeneratorController : MonoBehaviour
             GenerateTerrain(lastGeneratedPositionX);
             lastGeneratedPositionX += terrainTemplateWidth;
         }
-        while(lastRemovedPositionX + terrainTemplateWidth < GetHorizontalPositionStart())
+        while (lastRemovedPositionX + terrainTemplateWidth < GetHorizontalPositionStart())
         {
             lastRemovedPositionX += terrainTemplateWidth;
             RemoveTerrain(lastRemovedPositionX);
@@ -100,20 +104,52 @@ public class TerrainGeneratorController : MonoBehaviour
     {
         GameObject terrainToTemove = null;
         // find terrain at posX
-        foreach(GameObject item in spawnedTerrain)
+        foreach (GameObject item in spawnedTerrain)
         {
-            if(item.transform.position.x == posX)
+            if (item.transform.position.x == posX)
             {
                 terrainToTemove = item;
                 break;
             }
         }
         // after found
-        if(terrainToTemove != null)
+        if (terrainToTemove != null)
         {
             spawnedTerrain.Remove(terrainToTemove);
-            Destroy(terrainToTemove);
+            ReturnToPool(terrainToTemove);
         }
     }
+    private GameObject GenerateFromPool(GameObject item, Transform parent)
+    {
+        if (pool.ContainsKey(item.name))
+        {
+            if (pool[item.name].Count > 0)
+            {
+                GameObject newItemFromPool = pool[item.name][0];
+                pool[item.name].Remove(newItemFromPool);
+                newItemFromPool.SetActive(true);
+                return newItemFromPool;
+            }
 
+        }
+        else
+        {
+            // if item list not defined, create new one
+            pool.Add(item.name, new List<GameObject>());
+        }
+        // create new one if no item available in pool
+        GameObject newItem = Instantiate(item, parent);
+        newItem.name = item.name;
+        return newItem;
+    }
+
+    private void ReturnToPool(GameObject item)
+    {
+        if (!pool.ContainsKey(item.name))
+        {
+            Debug.LogError("INVALID POOL ITEM!!");
+        }
+        pool[item.name].Add(item);
+        item.SetActive(false);
+    }
 }

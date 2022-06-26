@@ -180,202 +180,202 @@ CompositeCollider2D:
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
-  - m_Collider: {fileID: 3488821235066385896}
-    m_ColliderPaths:
-    - - X: -101600301
-        Y: -50699996
-      - X: -101600301
-        Y: -37900000
-      - X: -114400016
-        Y: -37900293
-      - X: -114399723
-        Y: -50699996
-  - m_Collider: {fileID: 3488821234178781523}
-    m_ColliderPaths:
-    - - X: -88900293
-        Y: -50699996
-      - X: -88900293
-        Y: -37900000
-      - X: -101700008
-        Y: -37900293
-      - X: -101699715
-        Y: -50699996
-  - m_Collider: {fileID: 3488821235710888338}
-    m_ColliderPaths:
-    - - X: -38200293
-        Y: -50699996
-      - X: -38200293
-        Y: -37900000
-      - X: -51000000
-        Y: -37900293
-      - X: -50999707
-        Y: -50699996
-  - m_Collider: {fileID: 3488821234371004051}
-    m_ColliderPaths:
-    - - X: -25600297
-        Y: -50699996
-      - X: -25600297
-        Y: -37900000
-      - X: -38400000
-        Y: -37900293
-      - X: -38399707
-        Y: -50699996
-  - m_Collider: {fileID: 3488821235976601729}
-    m_ColliderPaths:
-    - - X: -12900294
-        Y: -50699996
-      - X: -12900294
-        Y: -37900000
-      - X: -25700002
-        Y: -37900293
-      - X: -25699709
-        Y: -50699996
-  - m_Collider: {fileID: 5622374435135058193}
-    m_ColliderPaths:
-    - - X: -101600301
-        Y: -50699996
-      - X: -101600301
-        Y: -37900000
-      - X: -114400016
-        Y: -37900293
-      - X: -114399723
-        Y: -50699996
-  - m_Collider: {fileID: 5622374436144297386}
-    m_ColliderPaths:
-    - - X: -88900293
-        Y: -50699996
-      - X: -88900293
-        Y: -37900000
-      - X: -101700008
-        Y: -37900293
-      - X: -101699715
-        Y: -50699996
-  - m_Collider: {fileID: 5622374435797192043}
-    m_ColliderPaths:
-    - - X: -38200293
-        Y: -50699996
-      - X: -38200293
-        Y: -37900000
-      - X: -51000000
-        Y: -37900293
-      - X: -50999707
-        Y: -50699996
-  - m_Collider: {fileID: 5622374436050616938}
-    m_ColliderPaths:
-    - - X: -25600297
-        Y: -50699996
-      - X: -25600297
-        Y: -37900000
-      - X: -38400000
-        Y: -37900293
-      - X: -38399707
-        Y: -50699996
-  - m_Collider: {fileID: 5622374435525182584}
-    m_ColliderPaths:
-    - - X: -12900294
-        Y: -50699996
-      - X: -12900294
-        Y: -37900000
-      - X: -25700002
-        Y: -37900293
-      - X: -25699709
-        Y: -50699996
-  - m_Collider: {fileID: 5657190538394043997}
-    m_ColliderPaths:
-    - - X: -50922085
-        Y: -50699996
-      - X: -50922085
-        Y: -37900000
-      - X: -63721792
-        Y: -37900293
-      - X: -63721499
-        Y: -50699996
   - m_Collider: {fileID: 1037857622}
     m_ColliderPaths:
     - - X: -107178517
-        Y: -50699996
+        Y: -58757248
       - X: -107178517
-        Y: -37900000
+        Y: -45957252
       - X: -119978224
-        Y: -37900293
+        Y: -45957545
       - X: -119977931
-        Y: -50699996
+        Y: -58757248
   - m_Collider: {fileID: 1899247597}
     m_ColliderPaths:
     - - X: -94478509
-        Y: -50699996
+        Y: -58757248
       - X: -94478509
-        Y: -37900000
+        Y: -45957252
       - X: -107278224
-        Y: -37900293
+        Y: -45957545
       - X: -107277931
-        Y: -50699996
+        Y: -58757248
   - m_Collider: {fileID: 11766743}
     m_ColliderPaths:
     - - X: -81878509
-        Y: -50699996
+        Y: -58757248
       - X: -81878509
-        Y: -37900000
+        Y: -45957252
       - X: -94678224
-        Y: -37900293
+        Y: -45957545
       - X: -94677931
-        Y: -50699996
+        Y: -58757248
   - m_Collider: {fileID: 84539232}
     m_ColliderPaths:
     - - X: -69178501
-        Y: -50699996
+        Y: -58757248
       - X: -69178501
-        Y: -37900000
+        Y: -45957252
       - X: -81978208
-        Y: -37900293
+        Y: -45957545
       - X: -81977915
-        Y: -50699996
+        Y: -58757248
   - m_Collider: {fileID: 24104151}
     m_ColliderPaths:
     - - X: -56478509
-        Y: -50699996
+        Y: -58757248
       - X: -56478509
-        Y: -37900000
+        Y: -45957252
       - X: -69278208
-        Y: -37900293
+        Y: -45957545
       - X: -69277915
-        Y: -50699996
+        Y: -58757248
   - m_Collider: {fileID: 440913708}
     m_ColliderPaths:
     - - X: -43778501
-        Y: -50699996
+        Y: -58757248
       - X: -43778501
-        Y: -37900000
+        Y: -45957252
       - X: -56578208
-        Y: -37900293
+        Y: -45957545
       - X: -56577915
-        Y: -50699996
+        Y: -58757248
   - m_Collider: {fileID: 1789050925}
     m_ColliderPaths:
     - - X: -31178505
-        Y: -50699996
+        Y: -58757248
       - X: -31178505
-        Y: -37900000
+        Y: -45957252
       - X: -43978208
-        Y: -37900293
+        Y: -45957545
       - X: -43977915
-        Y: -50699996
+        Y: -58757248
   - m_Collider: {fileID: 169690687}
     m_ColliderPaths:
     - - X: -18478501
-        Y: -50699996
+        Y: -58757248
       - X: -18478501
-        Y: -37900000
+        Y: -45957252
       - X: -31278210
-        Y: -37900293
+        Y: -45957545
       - X: -31277917
-        Y: -50699996
+        Y: -58757248
+  - m_Collider: {fileID: 5622374435135058193}
+    m_ColliderPaths:
+    - - X: -106922077
+        Y: -58757248
+      - X: -106922077
+        Y: -45957252
+      - X: -119721792
+        Y: -45957545
+      - X: -119721499
+        Y: -58757248
+  - m_Collider: {fileID: 5622374436144297386}
+    m_ColliderPaths:
+    - - X: -94222077
+        Y: -58757248
+      - X: -94222077
+        Y: -45957252
+      - X: -107021792
+        Y: -45957545
+      - X: -107021499
+        Y: -58757248
+  - m_Collider: {fileID: 5622374435797192043}
+    m_ColliderPaths:
+    - - X: -43522073
+        Y: -58757248
+      - X: -43522073
+        Y: -45957252
+      - X: -56321780
+        Y: -45957545
+      - X: -56321487
+        Y: -58757248
+  - m_Collider: {fileID: 5622374436050616938}
+    m_ColliderPaths:
+    - - X: -30922077
+        Y: -58757248
+      - X: -30922077
+        Y: -45957252
+      - X: -43721780
+        Y: -45957545
+      - X: -43721487
+        Y: -58757248
+  - m_Collider: {fileID: 5622374435525182584}
+    m_ColliderPaths:
+    - - X: -18222073
+        Y: -58757248
+      - X: -18222073
+        Y: -45957252
+      - X: -31021780
+        Y: -45957545
+      - X: -31021487
+        Y: -58757248
+  - m_Collider: {fileID: 5657190538394043997}
+    m_ColliderPaths:
+    - - X: -56243865
+        Y: -58757248
+      - X: -56243865
+        Y: -45957252
+      - X: -69043568
+        Y: -45957545
+      - X: -69043275
+        Y: -58757248
+  - m_Collider: {fileID: 3488821235066385896}
+    m_ColliderPaths:
+    - - X: -107122093
+        Y: -58757248
+      - X: -107122093
+        Y: -45957252
+      - X: -119921808
+        Y: -45957545
+      - X: -119921515
+        Y: -58757248
+  - m_Collider: {fileID: 3488821234178781523}
+    m_ColliderPaths:
+    - - X: -94422093
+        Y: -58757248
+      - X: -94422093
+        Y: -45957252
+      - X: -107221800
+        Y: -45957545
+      - X: -107221507
+        Y: -58757248
+  - m_Collider: {fileID: 3488821235710888338}
+    m_ColliderPaths:
+    - - X: -43722089
+        Y: -58757248
+      - X: -43722089
+        Y: -45957252
+      - X: -56521792
+        Y: -45957545
+      - X: -56521499
+        Y: -58757248
+  - m_Collider: {fileID: 3488821234371004051}
+    m_ColliderPaths:
+    - - X: -31122091
+        Y: -58757248
+      - X: -31122091
+        Y: -45957252
+      - X: -43921796
+        Y: -45957545
+      - X: -43921503
+        Y: -58757248
+  - m_Collider: {fileID: 3488821235976601729}
+    m_ColliderPaths:
+    - - X: -18422087
+        Y: -58757248
+      - X: -18422087
+        Y: -45957252
+      - X: -31221796
+        Y: -45957545
+      - X: -31221503
+        Y: -58757248
   m_CompositePaths:
     m_Paths:
-    - - {x: -1.2900587, y: -5.0699997}
-      - {x: -1.2900587, y: -3.79}
-      - {x: -11.997823, y: -3.7900584}
-      - {x: -11.997765, y: -5.0699997}
+    - - {x: -1.8222367, y: -5.875725}
+      - {x: -1.8222367, y: -4.595725}
+      - {x: -11.997823, y: -4.595784}
+      - {x: -11.997765, y: -5.875725}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &205536682
@@ -430,6 +430,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   terrainTemplates:
   - {fileID: 8072965737423201382}
+  - {fileID: 3427431961499979159}
+  - {fileID: 5907817379073100144}
   terrainTemplateWidth: 8.89
   gameCamera: {fileID: 519420031}
   areaStartOffset: -10
@@ -537,6 +539,49 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &818047558
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 818047560}
+  - component: {fileID: 818047559}
+  m_Layer: 0
+  m_Name: Score Controller
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &818047559
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818047558}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 370ae650c6ccd614e80a1903abd883fd, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!4 &818047560
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 818047558}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 3
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &981150308
 GameObject:
@@ -711,6 +756,8 @@ MonoBehaviour:
   groundLayerMask:
     serializedVersion: 2
     m_Bits: 256
+  score: {fileID: 818047559}
+  scoringRatio: 2
 --- !u!114 &981150315
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -937,11 +984,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 8961819165688901948, guid: 1c51691d282e0ef4189e2e8db32cdf35, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8057253
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8961819165688901948, guid: 1c51691d282e0ef4189e2e8db32cdf35, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.792318
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 8961819165688901948, guid: 1c51691d282e0ef4189e2e8db32cdf35, type: 3}
       propertyPath: m_LocalRotation.w
@@ -995,11 +1042,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 269861309253814471, guid: d66a47de4d8219a4cbfe9d649b1ddebf, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8057253
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 269861309253814471, guid: d66a47de4d8219a4cbfe9d649b1ddebf, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.792318
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 269861309253814471, guid: d66a47de4d8219a4cbfe9d649b1ddebf, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1073,11 +1120,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 924055464346997060, guid: a044731e25c1019418d0802e5e8c265e, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.8057253
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 924055464346997060, guid: a044731e25c1019418d0802e5e8c265e, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -14.792318
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 924055464346997060, guid: a044731e25c1019418d0802e5e8c265e, type: 3}
       propertyPath: m_LocalRotation.w

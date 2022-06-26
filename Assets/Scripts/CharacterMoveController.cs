@@ -22,6 +22,9 @@ public class CharacterMoveController : MonoBehaviour
 
     private Animator anim;
     private CharacterSoundController sound;
+    public ScoreController score;
+    public float scoringRatio;
+    private float lastPositionX;
 
     // Start is called before the first frame update
     void Start()
@@ -81,5 +84,14 @@ public class CharacterMoveController : MonoBehaviour
         }
         // Change Animation
         anim.SetBool("isOnGround", isOnGround);
+
+        // calculate score
+        int distancePassed = Mathf.FloorToInt(transform.position.x - lastPositionX);
+        int scoreIncrement = Mathf.FloorToInt(distancePassed / scoringRatio);
+        if (scoreIncrement > 0)
+        {
+            score.IncreaseCurrentScore(scoreIncrement);
+            lastPositionX += distancePassed;
+        }
     }
 }

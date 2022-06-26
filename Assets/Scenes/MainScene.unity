@@ -180,86 +180,6 @@ CompositeCollider2D:
   m_GenerationType: 0
   m_EdgeRadius: 0
   m_ColliderPaths:
-  - m_Collider: {fileID: 1037857622}
-    m_ColliderPaths:
-    - - X: -101600301
-        Y: -50699996
-      - X: -101600301
-        Y: -37900000
-      - X: -114400016
-        Y: -37900293
-      - X: -114399723
-        Y: -50699996
-  - m_Collider: {fileID: 1899247597}
-    m_ColliderPaths:
-    - - X: -88900293
-        Y: -50699996
-      - X: -88900293
-        Y: -37900000
-      - X: -101700008
-        Y: -37900293
-      - X: -101699715
-        Y: -50699996
-  - m_Collider: {fileID: 11766743}
-    m_ColliderPaths:
-    - - X: -76300301
-        Y: -50699996
-      - X: -76300301
-        Y: -37900000
-      - X: -89100008
-        Y: -37900293
-      - X: -89099715
-        Y: -50699996
-  - m_Collider: {fileID: 84539232}
-    m_ColliderPaths:
-    - - X: -63600293
-        Y: -50699996
-      - X: -63600293
-        Y: -37900000
-      - X: -76400000
-        Y: -37900293
-      - X: -76399707
-        Y: -50699996
-  - m_Collider: {fileID: 24104151}
-    m_ColliderPaths:
-    - - X: -50900301
-        Y: -50699996
-      - X: -50900301
-        Y: -37900000
-      - X: -63700004
-        Y: -37900293
-      - X: -63699711
-        Y: -50699996
-  - m_Collider: {fileID: 440913708}
-    m_ColliderPaths:
-    - - X: -38200293
-        Y: -50699996
-      - X: -38200293
-        Y: -37900000
-      - X: -51000000
-        Y: -37900293
-      - X: -50999707
-        Y: -50699996
-  - m_Collider: {fileID: 1789050925}
-    m_ColliderPaths:
-    - - X: -25600297
-        Y: -50699996
-      - X: -25600297
-        Y: -37900000
-      - X: -38400000
-        Y: -37900293
-      - X: -38399707
-        Y: -50699996
-  - m_Collider: {fileID: 169690687}
-    m_ColliderPaths:
-    - - X: -12900294
-        Y: -50699996
-      - X: -12900294
-        Y: -37900000
-      - X: -25700002
-        Y: -37900293
-      - X: -25699709
-        Y: -50699996
   - m_Collider: {fileID: 3488821235066385896}
     m_ColliderPaths:
     - - X: -101600301
@@ -370,12 +290,92 @@ CompositeCollider2D:
         Y: -37900293
       - X: -63721499
         Y: -50699996
+  - m_Collider: {fileID: 1037857622}
+    m_ColliderPaths:
+    - - X: -107178517
+        Y: -50699996
+      - X: -107178517
+        Y: -37900000
+      - X: -119978224
+        Y: -37900293
+      - X: -119977931
+        Y: -50699996
+  - m_Collider: {fileID: 1899247597}
+    m_ColliderPaths:
+    - - X: -94478509
+        Y: -50699996
+      - X: -94478509
+        Y: -37900000
+      - X: -107278224
+        Y: -37900293
+      - X: -107277931
+        Y: -50699996
+  - m_Collider: {fileID: 11766743}
+    m_ColliderPaths:
+    - - X: -81878509
+        Y: -50699996
+      - X: -81878509
+        Y: -37900000
+      - X: -94678224
+        Y: -37900293
+      - X: -94677931
+        Y: -50699996
+  - m_Collider: {fileID: 84539232}
+    m_ColliderPaths:
+    - - X: -69178501
+        Y: -50699996
+      - X: -69178501
+        Y: -37900000
+      - X: -81978208
+        Y: -37900293
+      - X: -81977915
+        Y: -50699996
+  - m_Collider: {fileID: 24104151}
+    m_ColliderPaths:
+    - - X: -56478509
+        Y: -50699996
+      - X: -56478509
+        Y: -37900000
+      - X: -69278208
+        Y: -37900293
+      - X: -69277915
+        Y: -50699996
+  - m_Collider: {fileID: 440913708}
+    m_ColliderPaths:
+    - - X: -43778501
+        Y: -50699996
+      - X: -43778501
+        Y: -37900000
+      - X: -56578208
+        Y: -37900293
+      - X: -56577915
+        Y: -50699996
+  - m_Collider: {fileID: 1789050925}
+    m_ColliderPaths:
+    - - X: -31178505
+        Y: -50699996
+      - X: -31178505
+        Y: -37900000
+      - X: -43978208
+        Y: -37900293
+      - X: -43977915
+        Y: -50699996
+  - m_Collider: {fileID: 169690687}
+    m_ColliderPaths:
+    - - X: -18478501
+        Y: -50699996
+      - X: -18478501
+        Y: -37900000
+      - X: -31278210
+        Y: -37900293
+      - X: -31277917
+        Y: -50699996
   m_CompositePaths:
     m_Paths:
     - - {x: -1.2900587, y: -5.0699997}
       - {x: -1.2900587, y: -3.79}
-      - {x: -11.4400015, y: -3.7900584}
-      - {x: -11.439943, y: -5.0699997}
+      - {x: -11.997823, y: -3.7900584}
+      - {x: -11.997765, y: -5.0699997}
   m_VertexDistance: 0.0005
   m_OffsetDistance: 0.00005
 --- !u!50 &205536682
@@ -434,6 +434,7 @@ MonoBehaviour:
   gameCamera: {fileID: 519420031}
   areaStartOffset: -10
   areaEndOffset: 5
+  earlyTerrainTemplates: []
 --- !u!61 &440913708 stripped
 BoxCollider2D:
   m_CorrespondingSourceObject: {fileID: 8072965737259838287, guid: a044731e25c1019418d0802e5e8c265e, type: 3}
@@ -1068,7 +1069,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 924055464346997060, guid: a044731e25c1019418d0802e5e8c265e, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.55782086
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 924055464346997060, guid: a044731e25c1019418d0802e5e8c265e, type: 3}
       propertyPath: m_LocalPosition.y

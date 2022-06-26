@@ -4,6 +4,9 @@ using UnityEngine;
 
 public class TerrainGeneratorController : MonoBehaviour
 {
+    private List<GameObject> spawnedTerrain;
+    private float lastGeneratedPositionX;
+
     [Header("Templates")]
     public List<TerrainTemplateController> terrainTemplates;
     public float terrainTemplateWidth;
@@ -12,6 +15,9 @@ public class TerrainGeneratorController : MonoBehaviour
     public Camera gameCamera;
     public float areaStartOffset;
     public float areaEndOffset;
+
+    [Header("Force Early Template")]
+    public List<TerrainTemplateController> earlyTerrainTemplates;
 
     private const float debugLineHeight = 10.0f;
 
@@ -39,5 +45,46 @@ public class TerrainGeneratorController : MonoBehaviour
         Debug.DrawLine(areaEndPosition + Vector3.up * debugLineHeight / 2,
             areaEndPosition + Vector3.down * debugLineHeight / 2, Color.red);
 
+    }
+
+    void Start()
+    {
+        spawnedTerrain = new List<GameObject>();
+        lastGeneratedPositionX = GetHorizontalPositionStart();
+        foreach(TerrainTemplateController terrain in earlyTerrainTemplates)
+        {
+            GenerateTerrain(lastGeneratedPositionX, terrain);
+            lastGeneratedPositionX += terrainTemplateWidth;
+        }
+        while (lastGeneratedPositionX < GetHorizontalPositionEnd())
+        {
+            GenerateTerrain(lastGeneratedPositionX);
+            lastGeneratedPositionX += terrainTemplateWidth;
+        }
+    }
+
+    private void GenerateTerrain (float posX, TerrainTemplateController forceterrain = null)
+    {
+        GameObject item = null;
+        if(forceterrain == null)
+        {
+            item = terrainTemplates[Random.Range(0, terrainTemplates.Count)].gameObject;
+        }
+        else
+        {
+            item = forceterrain.gameObject;
+        }
+        GameObject newTerrain = Instantiate(item, transform);
+        newTerrain.transform.position = new Vector2(posX, 0f);
+        spawnedTerrain.Add(newTerrain);
+    }
+
+    void Update()
+    {
+        while (lastGeneratedPositionX < GetHorizontalPositionEnd())
+        {
+            GenerateTerrain(lastGeneratedPositionX);
+            lastGeneratedPositionX += terrainTemplateWidth;
+        }
     }
 }

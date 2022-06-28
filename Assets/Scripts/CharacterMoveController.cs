@@ -4,6 +4,13 @@ using UnityEngine;
 
 public class CharacterMoveController : MonoBehaviour
 {
+    [Header("GameOver")]
+    public float fallPositionY;
+    public GameObject gameOverScreen;
+
+    [Header("Camera")]
+    public CameraMoveController gameCamera;
+
     [Header("Movement")]
     public float moveAccel;
     public float maxSpeed;
@@ -68,6 +75,18 @@ public class CharacterMoveController : MonoBehaviour
         Debug.DrawLine(transform.position, transform.position + (Vector3.down * groundRaycastDistance), Color.white);
     }
 
+    private void GameOver()
+    {
+        // set high score
+        score.FinishScoring();
+        // stop camera movement
+        gameCamera.enabled = false;
+        // show gameover
+        gameOverScreen.SetActive(true);
+        // disable this too
+        this.enabled = false;
+    }
+
     // Update is called once per frame
     void Update()
     {
@@ -88,10 +107,16 @@ public class CharacterMoveController : MonoBehaviour
         // calculate score
         int distancePassed = Mathf.FloorToInt(transform.position.x - lastPositionX);
         int scoreIncrement = Mathf.FloorToInt(distancePassed / scoringRatio);
+
         if (scoreIncrement > 0)
         {
             score.IncreaseCurrentScore(scoreIncrement);
             lastPositionX += distancePassed;
+        }
+
+        if (transform.position.y < fallPositionY)
+        {
+            GameOver();
         }
     }
 }
